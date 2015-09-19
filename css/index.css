@@ -1,96 +1,45 @@
-html, * {
-  box-sizing: border-box; }
+body {
+  background-color: #FFF;
+  height: 7299px; }
 
-body, div,
-dl,
-dt,
-dd,
-ul,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-input,
-textarea,
-p,
-blockquote,
-th,
-td {
-  margin: 0;
-  padding: 0; }
+header {
+  background: url("../img/backg_head.jpg") center center no-repeat;
+  background-size: cover;
+  height: 697px; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+.blog {
+  height: 665px;
+  background: url("../img/backg_blog.png") #f6f4f4 center center no-repeat;
+  background-size: cover; }
 
-fieldset,
-img,
-abbr {
-  border: 0; }
+.journal {
+  height: 1069px; }
 
-address,
-caption,
-cite,
-code,
-dfn,
-em,
-strong,
-th,
-var {
-  font-style: normal;
-  font-weight: normal; }
+.offer {
+  height: 646px;
+  background: url("../img/backg_offer.png") #f6f4f4 center center no-repeat;
+  background-size: cover; }
 
-ul li {
-  list-style: none; }
+.scheme {
+  height: 642px; }
 
-caption,
-th {
-  text-align: left; }
+.travel {
+  height: 1098px;
+  background: url("../img/backg_travel.png") #f6f4f4 center center no-repeat;
+  background-size: cover; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: normal;
-  font-weight: normal; }
+.gallery {
+  height: 944px; }
 
-sup {
-  vertical-align: text-top; }
+.logos {
+  height: 179px;
+  background-color: #f8f9fa; }
 
-sub {
-  vertical-align: text-bottom; }
+.our {
+  height: 1277px;
+  background: url("../img/backg_our.png") #f6f4f4 center center no-repeat;
+  background-size: cover; }
 
-input,
-textarea,
-select {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit; }
-
-legend {
-  color: #000; }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block; }
-
-a {
-  text-decoration: none; }
+footer {
+  height: 82px;
+  background-color: #3e5d68; }
