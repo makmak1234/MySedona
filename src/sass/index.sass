@@ -1,0 +1,228 @@
+@import reset
+
+$wayimg: "../img/"
+$waysprt: "../img_orig/sprites/"
+$veralg: middle //middle
+
+body
+	background-color: #FFF
+	height: 7299px//--------------------- 
+	font-family: OpenSans
+
+.wrapper
+	width: 1130px
+	margin: 0 auto
+
+.header-main__icon-logo
+	background: url($wayimg + "logo.png") center center no-repeat
+	//background-size: cover 
+	width: 117px
+	height: 27px
+
+.header-main
+	background: url($wayimg + "backg_head.jpg") center center no-repeat
+	background-size: cover 
+	height: 697px//---------------------
+.header-main__bg
+	height: 86px
+	background-color: rgba(255, 255, 255, 0.23)
+	overflow: hidden
+.header-main__wrap
+	//height: 100%
+	width: 1130px
+	margin: 23px auto 0 auto
+	//margin-top: 23px
+.header-main__icon-logo
+	display: inline-block
+	vertical-align: $veralg
+	margin-left: 11px
+.header-main__nav
+	display: inline-block
+	vertical-align: $veralg
+	margin-left: 60px 
+	ul
+		display: inline-block
+		position: relative
+		top: 5px
+		overflow: hidden
+		li
+			margin-left: 25px
+			font-size: 12px
+			color: rgb(157, 174, 182)
+			font-weight: bold
+			text-transform: uppercase
+			line-height: 1.667//3.667
+			float: left
+			//display: inline-block
+			//vertical-align: $veralg
+			overflow: hidden
+		a
+			//display: inline-block
+			//vertical-align: $veralg
+			///height: 32px
+			//margin-top: 20px
+			cursor: pointer
+			color:  rgb(157, 174, 182)
+			//overflow: hidden
+		li:nth-child(1)
+			margin-left: 0
+.header-main__nav--active
+	border-bottom: 3px solid rgb(54, 174, 234) 
+
+.button
+	display: inline-block
+	vertical-align: $veralg
+	border: rgb(54, 174, 234) 3px solid
+	border-radius: 4px
+	width: 147px
+	//height: 40px
+	margin-left: 246px//275px
+	font-size: 12px
+	font-family: "Raleway"
+	color: rgb(54, 174, 234)
+	font-weight: bold
+	text-transform: uppercase
+	line-height: 3.0//3.667
+	text-align: center
+	cursor: pointer
+
+.header-main__wrap--h1
+	margin-top: 130px
+	padding-left: 37px
+	padding-top: 43px
+	overflow: hidden
+
+.header-main__h1
+	font-size: 50px
+	font-family: "OpenSans"
+	color: rgb(255, 255, 255)
+	font-weight: bold
+	text-transform: uppercase
+	line-height: 1.2
+	text-align: left
+	//margin-top: 43px
+	//margin-left: 37px
+
+.header-main__h1--none
+	display: none
+
+.header-main__h1-vector
+	width: 485px
+	margin-bottom: 26px
+	//margin-top: 43px
+	//margin-left: 37px
+
+.header-main__descr
+	font-size: 18px
+	font-family: "OpenSans"
+	color: rgba(255, 255, 255, 0.749)
+	line-height: 1.611
+	text-align: left
+	margin-bottom: 25px
+
+.button--h1
+	border: none
+	background: rgb(54, 174, 234)
+	width: 253px
+	font-size: 14px
+	font-family: "Raleway"
+	color: rgb(255, 255, 255)
+	font-weight: bold
+	text-transform: uppercase
+	line-height: 3.143
+	text-align: center
+	margin: 0
+
+		
+
+
+.blog
+	height: 665px//---------------------
+	background: url($wayimg + "backg_blog.png") #f6f4f4 center center no-repeat
+	background-size: cover 
+	&__wrap
+		width: 1130px
+		margin: 0 auto
+		position: relative
+		//overflow: hidden
+		padding-top: 202px
+	&__about
+		//margin-top: 50px
+		margin-bottom: 30px
+		font-size: 23.401px
+		font-family: "OpenSans"
+		color: rgb(44, 46, 55)
+		font-weight: bold
+		text-transform: uppercase
+		line-height: 2.137
+		text-align: left
+	&__h1
+		//margin-top: 30px
+		margin-bottom: 34px
+		font-size: 14px
+		font-family: "OpenSans"
+		color: rgb(148, 148, 148)
+		line-height: 1.857
+		text-align: left
+	&__bg1
+		position: absolute
+		right: -215px
+		top: -35px
+	&__bg2
+		position: absolute
+		right: 328px
+		top: 275px
+
+.button--blog
+	//margin-top: 34px
+	margin: 0
+	border: none
+	background: rgb(54, 174, 234)
+	width: 130px
+	font-size: 14.041px
+	font-family: "OpenSans"
+	color: rgb(255, 255, 255)
+	font-weight: bold
+	text-transform: uppercase
+	line-height: 3.561
+	text-align: center
+
+.icon-polyline--blog
+	//margin-top: 202px
+	margin-bottom: 50px
+
+.journal
+	height: 1069px//---------------------
+
+.offer
+	height: 646px//---------------------
+	background: url($wayimg + "backg_offer.jpg") #f6f4f4 center center no-repeat
+	background-size: cover 
+
+.scheme
+	height: 642px//---------------------
+
+.travel
+	height: 1098px//---------------------
+	background: url($wayimg + "backg_travel.png") #f6f4f4 center center no-repeat
+	background-size: cover 
+
+.gallery
+	height: 944px//---------------------
+
+.logos
+	height: 179px//---------------------
+	background-color: #f8f9fa
+
+.our
+	height: 1277px//---------------------
+	background: url($wayimg + "backg_our.png") #f6f4f4 center center no-repeat
+	background-size: cover 
+
+.footer
+	height: 82px//---------------------
+	background-color: #3e5d68
+
+
+
+

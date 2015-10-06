@@ -1,0 +1,131 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-footer_facebook {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -101px;
+  width: 14px;
+  height: 24px;
+}
+.icon-footer_twitter {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -56px;
+  width: 22px;
+  height: 19px;
+}
+.icon-footer_vk {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -8px;
+  width: 17px;
+  height: 11px;
+}
+.icon-journal__post-bg {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -760px;
+  width: 392px;
+  height: 380px;
+}
+.icon-journal_drop {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -468px;
+  width: 59px;
+  height: 74px;
+}
+.icon-journal_heart {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -543px;
+  width: 81px;
+  height: 81px;
+}
+.icon-journal_leaf {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -402px;
+  width: 65px;
+  height: 65px;
+}
+.icon-logos_delta {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -207px;
+  width: 38px;
+  height: 34px;
+}
+.icon-logos_facebook {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -37px;
+  width: 80px;
+  height: 18px;
+}
+.icon-logos_google {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -178px;
+  width: 80px;
+  height: 28px;
+}
+.icon-logos_nike {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -151px;
+  width: 70px;
+  height: 26px;
+}
+.icon-logos_slack {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -76px;
+  width: 80px;
+  height: 24px;
+}
+.icon-logos_spotily {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -126px;
+  width: 80px;
+  height: 24px;
+}
+.icon-polyline {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px 0px;
+  width: 81px;
+  height: 7px;
+}
+.icon-scheme_bg {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -625px;
+  width: 123px;
+  height: 134px;
+}
+.icon-scheme_ok {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -242px;
+  width: 38px;
+  height: 38px;
+}
+.icon-scheme_pip {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -320px;
+  width: 40px;
+  height: 40px;
+}
+.icon-scheme_read {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -281px;
+  width: 38px;
+  height: 38px;
+}
+.icon-sheme_copy {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -361px;
+  width: 32px;
+  height: 40px;
+}
+.icon-star {
+  background-image: url(../img/spritesheet.png);
+  background-position: 0px -20px;
+  width: 17px;
+  height: 16px;
+}
