@@ -1,0 +1,5 @@
+$ cat .gitignore
+node_modules/
+ssh/
+.sass-cache/
+makmak1234.github.io/
