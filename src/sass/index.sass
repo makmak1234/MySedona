@@ -4,6 +4,23 @@ $wayimg: "../img/"
 $waysprt: "../img_orig/sprites/"
 $veralg: middle //middle
 
+=chva
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+
+=cv
+	position: absolute
+	top: 50%
+	transform: translate(0,-50%)	
+
+=ch
+	position: absolute
+	left: 50%
+	transform: translate(-50%,0)
+
+
 body
 	background-color: #FFF
 	height: 7299px//--------------------- 
@@ -72,11 +89,10 @@ body
 .button
 	display: inline-block
 	vertical-align: $veralg
-	border: rgb(54, 174, 234) 3px solid
+	//border: rgb(54, 174, 234) 3px solid
 	border-radius: 4px
 	width: 147px
-	//height: 40px
-	margin-left: 246px//275px
+	//margin-left: 246px//275px
 	font-size: 12px
 	font-family: "Raleway"
 	color: rgb(54, 174, 234)
@@ -85,6 +101,9 @@ body
 	line-height: 3.0//3.667
 	text-align: center
 	cursor: pointer
+	&--menu
+		margin-left: 246px//275px
+		border: rgb(54, 174, 234) 3px solid
 
 .header-main__wrap--h1
 	margin-top: 130px
@@ -194,13 +213,339 @@ body
 .journal
 	height: 1069px//---------------------
 
+.journal__wrap
+	padding-top: 70px
+	text-align: center
+
+.icon-polyline--journal
+	margin-bottom: 35px
+
+.jornal__h1
+	margin-bottom: 70px
+	font-size: 35.102px
+	font-family: "OpenSans"
+	color: rgb(44, 46, 55)
+	font-weight: bold
+	text-transform: uppercase
+	line-height: 1 //1.424
+	text-align: center
+
+.journal__post-wrap
+	background-color: rgb(255, 255, 255)
+	opacity: 0.851
+	box-shadow: 0px 0px 21px 0px rgba(6, 6, 6, 0.13)
+	width: 1130px
+	margin: 0 auto
+	overflow: hidden
+
+.journal__post
+	height: 380px
+	width: 66.6%
+	//text-align: center
+	//position: relative
+	//padding-top: 150px
+	overflow: hidden
+	float: left
+	&--water
+		float: right
+		width: 33.3%
+		height: 740px
+
+.journal__pic
+	height: 380px
+	width: 50%
+	text-align: center
+	position: relative
+	padding-top: 150px
+	float: left
+	&--love
+		background: url("../img/journal__hearth-bg.jpg") right no-repeat
+	&--tree
+		//clear: both
+		background: url("../img/journal__leaf-bg.jpg") right no-repeat
+	&--water
+		width: 100%
+		clear: both
+		background: url("../img/journal__drop-bg.jpg") right no-repeat
+
+
+.icon-journal__post-bg--heart-pos
+	position: absolute
+	right: -1px
+	top: 50px
+
+.icon-journal__post-bg--tree-pos
+	position: absolute
+	transform: rotate(180deg)
+	left: -1px
+	top: 50px
+
+.icon-journal__post-bg--water-pos
+	position: absolute
+	transform: rotate(90deg)
+	transform-origin: 0 50% 0
+	bottom: -1px
+	left: 50px
+
+.icon-journal-heart--pos
+	//margin: 0 auto
+	+chva
+
+.icon-journal-leaf--pos
+	+chva
+
+
+.icon-journal-drop--pos
+	//margin: 0 auto
+	+chva
+
+.journal__post-dsc
+	height: 380px
+	width: 50%
+	//float: left
+	overflow: hidden
+	text-align: center
+	&--water
+		width: 100%
+		overflow: hidden
+	&--tree
+		float: left
+
+.journal__post-title
+	font-size: 11.579px
+	font-family: "OpenSans"
+	color: rgb(22, 181, 239)
+	font-weight: bold
+	line-height: 8.14//1.14
+
+.journal__post-h1
+	font-size: 17px
+	font-family: "OpenSans"
+	color: rgb(33, 33, 33)
+	font-weight: bold
+	text-transform: uppercase
+	line-height: 1.5
+	padding-left: 30px
+	padding-right: 30px
+	margin-bottom: 25px
+
+
+.journal__post-p
+	font-size: 14.737px
+	font-family: "OpenSans"
+	color: rgb(119, 119, 119)
+	line-height: 1.629
+	padding-left: 55px
+	padding-right: 55px
+
+
+.journal__post-num
+	font-size: 14.737px
+	font-family: "Times New Roman"
+	color: rgb(33, 33, 33)
+	line-height: 5.221//1.221
+
+
+//.icon-journal_heart
+	
+
+/*.journal__post--tree
+	transform: scale(1, -1)
+	direction: rtl */
+
+
 .offer
 	height: 646px//---------------------
 	background: url($wayimg + "backg_offer.jpg") #f6f4f4 center center no-repeat
 	background-size: cover 
+	//overflow: hidden
+	padding-top: 145px
+	&__wrap
+		width: 1130px
+		margin: 0 auto
+		//margin-top: 145px
+	&__h1
+		font-size: 23.401px
+		font-family: "OpenSans"
+		color: rgb(44, 46, 55)
+		font-weight: bold
+		text-transform: uppercase
+		line-height: 1.0//2.137
+		text-align: left
+		margin-bottom: 20px
+	&__p
+		font-size: 16px
+		font-family: "OpenSans"
+		color: rgb(148, 148, 148)
+		line-height: 1.625
+		text-align: left
+		margin-bottom: 15px
+	&__form
+		display: inline-block
+		background-color: rgb(255, 255, 255)
+		border-radius: 3px
+		border: 2px solid #fff
+		&-text
+			//position: absolute
+			//left: 0
+			//top: 0
+			//content: "Your name:"
+			display: inline-block
+			vertical-align: $veralg
+			padding: 0 20px
+			font-size: 16px
+			font-family: "OpenSans"
+			color: rgb(132, 132, 132)
+			line-height: 1.2
+			text-align: center
+			//z-index: 10000
+			&--phone:before
+				display: inline-block
+				vertical-align: $veralg
+				content: ""
+				width: 1px
+				height: 35px
+				//+cv
+				position: relative
+				right: 20px
+				//top: 7px
+				background-color: #ebebeb
+	&__form-name
+		position: relative
+		border: none
+	&__form-phone
+		border: none
+		margin-right: 20px
+	&__warn
+		display: inline-block
+		vertical-align: $veralg
+		font-size: 14px
+		font-family: "OpenSans"
+		color: rgb(54, 174, 234)
+		line-height: 2.429
+		text-align: left
+		margin-left: 5px
+	
+.button--offer
+	width: auto
+	border: none
+	background: rgb(54, 174, 234)
+	color: #fff	
+	font-size: 16px
+	font-family: "OpenSans"
+	color: rgb(255, 255, 255)
+	font-weight: bold
+	line-height: 3.7
+	padding: 0 57px
+	text-align: center
+
+.icon-offer__locked--pos
+	display: inline-block
+	vertical-align: $veralg
+
+.icon-polyline--offer
+	margin-bottom: 55px
 
 .scheme
-	height: 642px//---------------------
+	height: 642px//--------------------
+	&__wrap
+		width: 1130px
+		margin: 0 auto
+		padding: 70px 0px 0 0px
+		text-align: center
+		overflow: hidden
+	&__h1
+		margin-bottom: 31px
+		font-size: 35.102px
+		font-family: "OpenSans"
+		color: rgb(44, 46, 55)
+		font-weight: bold
+		text-transform: uppercase
+		line-height: 1.0//1.424
+	&__bg1
+		height: 76px
+		width: 510px
+		border: 2px solid #404041
+		border-radius: 8px
+		margin: 0 auto
+		position: relative
+	&__1234
+		position: relative
+		top: -31px
+		background: url("../img/scheme__block-bg.png") no-repeat center 19px
+		overflow: hidden
+	&__block
+		width: 200px
+		text-align: center
+		float: left
+		margin-right: 93px
+		&-num
+			width: 47px
+			height: 47px
+			font-size: 16px
+			font-family: "Roboto"
+			color: rgb(59, 176, 235)
+			text-transform: uppercase
+			line-height: 2.625//3.125
+			text-align: center
+			border-radius: 50%
+			border: 2px solid #36aeea
+			background-color: #fff
+			margin: 0 auto 60px auto
+		&-icon
+			width: 180px
+			height: 180px
+			border-radius: 50%
+			background-color: #f0f3f6
+			margin: 0 auto 30px auto
+			position: relative
+		&-h1
+			font-size: 18px
+			font-family: "Roboto"
+			font-weight: bold
+			color: rgb(44, 46, 55)
+			line-height: 1.0//1.333
+			text-align: center
+		&-p
+			font-size: 18px
+			font-family: "Roboto"
+			color: rgb(44, 46, 55)
+			line-height: 1.333
+			text-align: center
+	&__block:nth-child(5)
+		margin-right: 25px
+	&__block:nth-child(2)
+		margin-left: 25px
+	&__circle
+		width: 25px
+		height: 25px
+		border: 2px solid #fff
+		border-radius: 50%
+		background-color: #f4d03f
+		+ch
+		bottom: -14px
+		
+
+.icon-polyline--scheme
+	margin: 0 auto 37px auto
+
+
+.icon-scheme_bg--pos
+	+chva
+	top: 53%
+
+.icon-sheme_copy--pos
+	+chva
+
+.icon-scheme__drop2--pos
+	position: absolute
+	left: 5px
+	top: 138px
+
+.icon-scheme__drop1--pos
+	position: absolute
+	right: 1px
+	top: 138px
 
 .travel
 	height: 1098px//---------------------
