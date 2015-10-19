@@ -20,6 +20,14 @@ $veralg: middle //middle
 	left: 50%
 	transform: translate(-50%,0)
 
+=cf
+	//*zoom: 1
+	&:before,
+	&:after
+		content: ""
+		display: table
+	&:before
+		clear: both
 
 body
 	background-color: #FFF
@@ -163,7 +171,8 @@ body
 		width: 1130px
 		margin: 0 auto
 		position: relative
-		//overflow: hidden
+		overflow: hidden
+		height: 665px//---------------------
 		padding-top: 202px
 	&__about
 		//margin-top: 50px
@@ -447,7 +456,8 @@ body
 	margin-bottom: 55px
 
 .scheme
-	height: 642px//--------------------
+	//height: 642px//--------------------
+	margin-bottom: 100px
 	&__wrap
 		width: 1130px
 		margin: 0 auto
@@ -525,16 +535,14 @@ body
 		+ch
 		bottom: -14px
 		
-
 .icon-polyline--scheme
 	margin: 0 auto 37px auto
-
 
 .icon-scheme_bg--pos
 	+chva
 	top: 53%
 
-.icon-sheme_copy--pos
+.icon-scheme_copy--pos, .icon-scheme_ok--pos, .icon-scheme_read--pos, .icon-scheme_pip--pos
 	+chva
 
 .icon-scheme__drop2--pos
@@ -549,24 +557,342 @@ body
 
 .travel
 	height: 1098px//---------------------
-	background: url($wayimg + "backg_travel.png") #f6f4f4 center center no-repeat
+	background: url($wayimg + "backg_travel.png") #f6f4f4 center 24px no-repeat
 	background-size: cover 
+	&__wrap
+		width: 1130px
+		margin: 0 auto 0 auto
+		//padding: 0px 0px 0 0px
+		text-align: center
+		overflow: hidden
+		//position: relative
+	&__h1
+		margin: 0 auto 100px auto
+		font-size: 35.102px
+		font-family: "OpenSans"
+		color: rgb(44, 46, 55)
+		font-weight: bold
+		text-transform: uppercase
+		line-height: 1.0//1.424
+		text-align: center
+	&__block
+		float: left
+		margin-right: 32px
+		padding-top: 15px
+		width: 200px
+		height: 380px
+		border-radius: 1px
+		&--1
+			background: url("../img/travel_carp_bg.jpg") center center no-repeat
+		&--2
+			background: url("../img/travel_alps_bg.jpg") center center no-repeat
+		&--3
+			background: url("../img/travel_pyrenees_bg.jpg") center center no-repeat
+		&--4
+			background: url("../img/travel_rocky_bg.jpg") center center no-repeat
+		&--5
+			background: url("../img/travel_kavkaz_bg.jpg") center center no-repeat
+		&-h1
+			margin-bottom: 22px
+			font-size: 28px
+			font-family: "OpenSans"
+			color: rgb(255, 255, 255)
+			line-height: 1.0
+			text-align: left
+			padding-left: 22px
+			padding-right: 22px
+		&-p
+			margin-bottom: 64px
+			font-size: 16px
+			font-family: "OpenSans"
+			color: rgb(255, 255, 255)
+			line-height: 1.375
+			text-align: left
+			padding-left: 22px
+			padding-right: 22px
+		&-price
+			//background-color: rgb(0, 0, 0)
+			//opacity: 0.2
+			height: 61px
+			overflow: hidden
+			padding-top: 18px
+			//padding: 0 13px 0 18px
+			&-full
+				display: inline-block
+				//float: left
+				width: 49%
+				vertical-align: $veralg
+				text-align: left
+				padding-left: 18px
+				font-size: 18px
+				font-family: "OpenSans"
+				color: rgb(255, 255, 255)
+				text-decoration: line-through
+				//height: 61px
+				line-height: 1//1.222
+			&-sale
+				display: inline-block
+				//float: left
+				width: 49%
+				vertical-align: $veralg
+				text-align: right
+				padding-right: 13px
+				font-size: 26px
+				font-family: "OpenSans"
+				color: rgb(255, 255, 255)
+				//height: 61px
+				line-height: 1//0.846
+	&__block:nth-child(7)
+		margin-right: 0
+	&__star
+		margin-bottom: 130px
+		padding-left: 22px
+		overflow: hidden
+
+.icon-polyline--travel
+	margin: 0 auto 37px auto
+	//position: relative
+	//top: -10px
+
+.icon-star--travel
+	margin-right: 4px
+	float: left
+
 
 .gallery
 	height: 944px//---------------------
+	&__wrap
+		width: 1130px
+		margin: 0 auto 80px auto
+		padding-top: 70px
+		overflow: hidden
+		//column-gap: normal
+		//column-count: 3
+		//column-width: auto
+		//column-rule: 15px solid #fff
+	/*	&--flex
+			display: flex
+			flex-direction: column 
+			flex-wrap: wrap
+			justify-content: space-between
+			align-content: space-between
+			height: 650px */
+	&__h1
+		margin: 0 auto 74px auto
+		font-size: 35.102px
+		font-family: "OpenSans"
+		color: rgb(44, 46, 55)
+		font-weight: bold
+		text-transform: uppercase
+		line-height: 1.424
+		text-align: center
+	&__col
+		float: left
+		margin-right: 24px
+		img
+			display: block
+			margin-bottom: 24px
+	&__col:nth-child(5)
+		margin-right: 0
+
+.icon-polyline--gallery
+	margin: 0 auto 34px auto
 
 .logos
 	height: 179px//---------------------
 	background-color: #f8f9fa
+	&__wrap
+		display: flex
+		//overflow: hidden
+		flex-flow: row nowrap
+		justify-content: space-between
+		align-items: center 
+		width: 1130px
+		height: 100%//---------------------
+		margin: auto
 
 .our
 	height: 1277px//---------------------
 	background: url($wayimg + "backg_our.png") #f6f4f4 center center no-repeat
-	background-size: cover 
+	background-size: cover
+	&__wrap
+		width: 1130px
+		margin: 0 auto 0px auto
+		padding-top: 70px
+		overflow: hidden
+	&__h1
+		font-size: 35.102px
+		font-family: "OpenSans"
+		color: rgb(44, 46, 55)
+		font-weight: bold
+		text-transform: uppercase
+		line-height: 1.424
+	&__people
+		width: 48%
+		float: left
+		padding-left: 13px
+		padding-right: 13px
+		margin-right: 32px
+		margin-bottom: 140px
+		overflow: hidden
+		&-quot
+			font-size: 92px
+			font-family: "LeagueGothic"
+			color: rgb(117, 134, 151)
+			line-height: 0.359
+			text-align: left
+		&-p
+			font-size: 18px
+			font-family: "OpenSans"
+			color: rgb(188, 188, 188)
+			line-height: 1.833
+			text-align: justify
+			text-align-last: left
+			margin-bottom: 20px
+		&-photo
+			display: inline-block
+			vertical-align: $veralg
+			background: url("../img/our_bg1.png") center center no-repeat
+			background-size: cover
+			border-radius: 50%
+			width: 65px
+			height: 65px
+		&-name
+			display: inline-block
+			vertical-align: $veralg
+			font-size: 16px
+			font-family: "OpenSans"
+			color: rgb(54, 174, 234)
+			//font-weight: bold
+			line-height: 2.063
+			text-align: left
+			padding-left: 18px
+	&__people:nth-child(4)
+		margin-right: 0
+	&__contact
+		background: url("../img/our__contacts-bg.jpg") center center no-repeat
+		background-size: cover
+		width: 515px
+		padding: 40px 30px 0 30px
+		border-radius: 2px
+		margin: 0 auto 0 auto
+		clear: both
+		//overflow: hidden
+		//+cf
+		&-h1
+			font-size: 36px
+			font-family: "OpenSans"
+			color: #36aeea//rgb(54, 174, 234)
+			text-transform: uppercase
+			font-weight: bold
+			line-height: 1.2
+			text-align: center
+		&-p
+			font-size: 16px
+			font-family: "OpenSans"
+			color: #383e4a
+			//font-weight: bold
+			line-height: 1.2
+			text-align: center
+			margin-bottom: 40px
+		input
+			width: 100%
+			padding-left: 20px
+			height: 60px
+			margin-bottom: 20px
+			border-radius: 4px
+			box-shadow: none
+			border: none
+			font-size: 18px
+			font-family: "Roboto"
+			color: rgb(204, 204, 204)
+			line-height: 1.2
+		&-send
+			height: 70px
+			//width: 100%
+			background-color: #36aeea
+			text-align: center
+			padding-left: 0	
+			cursor: pointer		
+
+.icon-polyline--our
+	margin: 0 auto 35px auto
+
 
 .footer
 	height: 82px//---------------------
 	background-color: #3e5d68
+	&__wrap
+		display: flex
+		flex-flow: row nowrap
+		justify-content: space-between
+		align-items: center 
+		width: 1130px
+		height: 100%//---------------------
+		margin: auto
+		width: 1130px
+		//padding-top: 70px
+		overflow: hidden
+	&__copyr
+		//display: inline-block
+		font-size: 18px
+		font-family: "OpenSans"
+		color: #76aabd//rgb(255, 255, 255)
+		line-height: 1.2
+		text-align: left
+	&__social
+		display: flex
+		flex-flow: row nowrap
+		justify-content: space-between
+		align-items: center 
+	&__twitter
+		display: flex
+		//margin: auto
+		width: 40px
+		height: 40px
+		background-color: #29c5f6
+		margin-right: 8px
+		box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3)
+	&__facebook
+		display: flex
+		//flex-flow: row nowrap
+		//justify-content: space-between
+		//align-items: center 
+		//margin: auto
+		width: 40px
+		height: 40px
+		background-color: #6788ce
+		margin-right: 8px
+		box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3)
+	&__vk
+		position: relative
+		//display: flex
+		//margin: auto
+		width: 40px
+		height: 40px
+		background-color: #54769a
+		//margin-right: 4px
+		box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3)
+	&__tel
+		font-size: 27px
+		font-family: "Roboto"
+		color: #7cc0d4//rgb//(255, 255, 255)
+		line-height: 1.2
+		text-align: left
+
+.icon-footer_vk--pos
+	+chva
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
+
+.icon-footer_facebook--pos
+	margin: auto
+	//box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
+
+.icon-footer_twitter--pos
+	margin: auto
+	//box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
+
+
 
 
 

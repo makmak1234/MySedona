@@ -223,6 +223,8 @@ body {
     width: 1130px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
+    height: 665px;
     padding-top: 202px; }
   .blog__about {
     margin-bottom: 30px;
@@ -485,7 +487,7 @@ body {
   margin-bottom: 55px; }
 
 .scheme {
-  height: 642px; }
+  margin-bottom: 100px; }
   .scheme__wrap {
     width: 1130px;
     margin: 0 auto;
@@ -575,7 +577,7 @@ body {
   transform: translate(-50%, -50%);
   top: 53%; }
 
-.icon-sheme_copy--pos {
+.icon-scheme_copy--pos, .icon-scheme_ok--pos, .icon-scheme_read--pos, .icon-scheme_pip--pos {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -593,21 +595,305 @@ body {
 
 .travel {
   height: 1098px;
-  background: url("../img/backg_travel.png") #f6f4f4 center center no-repeat;
+  background: url("../img/backg_travel.png") #f6f4f4 center 24px no-repeat;
   background-size: cover; }
+  .travel__wrap {
+    width: 1130px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    overflow: hidden; }
+  .travel__h1 {
+    margin: 0 auto 100px auto;
+    font-size: 35.102px;
+    font-family: "OpenSans";
+    color: #2c2e37;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center; }
+  .travel__block {
+    float: left;
+    margin-right: 32px;
+    padding-top: 15px;
+    width: 200px;
+    height: 380px;
+    border-radius: 1px; }
+    .travel__block--1 {
+      background: url("../img/travel_carp_bg.jpg") center center no-repeat; }
+    .travel__block--2 {
+      background: url("../img/travel_alps_bg.jpg") center center no-repeat; }
+    .travel__block--3 {
+      background: url("../img/travel_pyrenees_bg.jpg") center center no-repeat; }
+    .travel__block--4 {
+      background: url("../img/travel_rocky_bg.jpg") center center no-repeat; }
+    .travel__block--5 {
+      background: url("../img/travel_kavkaz_bg.jpg") center center no-repeat; }
+    .travel__block-h1 {
+      margin-bottom: 22px;
+      font-size: 28px;
+      font-family: "OpenSans";
+      color: white;
+      line-height: 1;
+      text-align: left;
+      padding-left: 22px;
+      padding-right: 22px; }
+    .travel__block-p {
+      margin-bottom: 64px;
+      font-size: 16px;
+      font-family: "OpenSans";
+      color: white;
+      line-height: 1.375;
+      text-align: left;
+      padding-left: 22px;
+      padding-right: 22px; }
+    .travel__block-price {
+      height: 61px;
+      overflow: hidden;
+      padding-top: 18px; }
+      .travel__block-price-full {
+        display: inline-block;
+        width: 49%;
+        vertical-align: middle;
+        text-align: left;
+        padding-left: 18px;
+        font-size: 18px;
+        font-family: "OpenSans";
+        color: white;
+        text-decoration: line-through;
+        line-height: 1; }
+      .travel__block-price-sale {
+        display: inline-block;
+        width: 49%;
+        vertical-align: middle;
+        text-align: right;
+        padding-right: 13px;
+        font-size: 26px;
+        font-family: "OpenSans";
+        color: white;
+        line-height: 1; }
+  .travel__block:nth-child(7) {
+    margin-right: 0; }
+  .travel__star {
+    margin-bottom: 130px;
+    padding-left: 22px;
+    overflow: hidden; }
+
+.icon-polyline--travel {
+  margin: 0 auto 37px auto; }
+
+.icon-star--travel {
+  margin-right: 4px;
+  float: left; }
 
 .gallery {
-  height: 944px; }
+  height: 944px;
+  /*	&--flex
+   * display: flex
+   * flex-direction: column 
+   * flex-wrap: wrap
+   * justify-content: space-between
+   * align-content: space-between
+   * height: 650px */ }
+  .gallery__wrap {
+    width: 1130px;
+    margin: 0 auto 80px auto;
+    padding-top: 70px;
+    overflow: hidden; }
+  .gallery__h1 {
+    margin: 0 auto 74px auto;
+    font-size: 35.102px;
+    font-family: "OpenSans";
+    color: #2c2e37;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.424;
+    text-align: center; }
+  .gallery__col {
+    float: left;
+    margin-right: 24px; }
+    .gallery__col img {
+      display: block;
+      margin-bottom: 24px; }
+  .gallery__col:nth-child(5) {
+    margin-right: 0; }
+
+.icon-polyline--gallery {
+  margin: 0 auto 34px auto; }
 
 .logos {
   height: 179px;
   background-color: #f8f9fa; }
+  .logos__wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1130px;
+    height: 100%;
+    margin: auto; }
 
 .our {
   height: 1277px;
   background: url("../img/backg_our.png") #f6f4f4 center center no-repeat;
   background-size: cover; }
+  .our__wrap {
+    width: 1130px;
+    margin: 0 auto 0px auto;
+    padding-top: 70px;
+    overflow: hidden; }
+  .our__h1 {
+    font-size: 35.102px;
+    font-family: "OpenSans";
+    color: #2c2e37;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.424; }
+  .our__people {
+    width: 48%;
+    float: left;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-right: 32px;
+    margin-bottom: 140px;
+    overflow: hidden; }
+    .our__people-quot {
+      font-size: 92px;
+      font-family: "LeagueGothic";
+      color: #758697;
+      line-height: 0.359;
+      text-align: left; }
+    .our__people-p {
+      font-size: 18px;
+      font-family: "OpenSans";
+      color: #bcbcbc;
+      line-height: 1.833;
+      text-align: justify;
+      text-align-last: left;
+      margin-bottom: 20px; }
+    .our__people-photo {
+      display: inline-block;
+      vertical-align: middle;
+      background: url("../img/our_bg1.png") center center no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+      width: 65px;
+      height: 65px; }
+    .our__people-name {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 16px;
+      font-family: "OpenSans";
+      color: #36aeea;
+      line-height: 2.063;
+      text-align: left;
+      padding-left: 18px; }
+  .our__people:nth-child(4) {
+    margin-right: 0; }
+  .our__contact {
+    background: url("../img/our__contacts-bg.jpg") center center no-repeat;
+    background-size: cover;
+    width: 515px;
+    padding: 40px 30px 0 30px;
+    border-radius: 2px;
+    margin: 0 auto 0 auto;
+    clear: both; }
+    .our__contact-h1 {
+      font-size: 36px;
+      font-family: "OpenSans";
+      color: #36aeea;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: center; }
+    .our__contact-p {
+      font-size: 16px;
+      font-family: "OpenSans";
+      color: #383e4a;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 40px; }
+    .our__contact input {
+      width: 100%;
+      padding-left: 20px;
+      height: 60px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      box-shadow: none;
+      border: none;
+      font-size: 18px;
+      font-family: "Roboto";
+      color: #cccccc;
+      line-height: 1.2; }
+    .our__contact-send {
+      height: 70px;
+      background-color: #36aeea;
+      text-align: center;
+      padding-left: 0;
+      cursor: pointer; }
+
+.icon-polyline--our {
+  margin: 0 auto 35px auto; }
 
 .footer {
   height: 82px;
   background-color: #3e5d68; }
+  .footer__wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1130px;
+    height: 100%;
+    margin: auto;
+    width: 1130px;
+    overflow: hidden; }
+  .footer__copyr {
+    font-size: 18px;
+    font-family: "OpenSans";
+    color: #76aabd;
+    line-height: 1.2;
+    text-align: left; }
+  .footer__social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__twitter {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #29c5f6;
+    margin-right: 8px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3); }
+  .footer__facebook {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: #6788ce;
+    margin-right: 8px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3); }
+  .footer__vk {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #54769a;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3); }
+  .footer__tel {
+    font-size: 27px;
+    font-family: "Roboto";
+    color: #7cc0d4;
+    line-height: 1.2;
+    text-align: left; }
+
+.icon-footer_vk--pos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); }
+
+.icon-footer_facebook--pos {
+  margin: auto; }
+
+.icon-footer_twitter--pos {
+  margin: auto; }
